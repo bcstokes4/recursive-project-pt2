@@ -14,7 +14,8 @@ reverse(""); // ""
 
 
 function reverse(str) {
-  // Your code here
+
+  console.log('hello world')
 }
 
 
