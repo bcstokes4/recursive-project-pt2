@@ -10,15 +10,19 @@ reverse("atom"); // "mota"
 reverse("q"); // "q"
 reverse("id"); // "di"
 reverse(""); // ""
+
+//return (lastLetter)+reverse(str - lastletter)
 ***********************************************************************/
 
 
 function reverse(str) {
 
-  console.log('hello world')
+  if (str.length <= 1) return str
+
+ return str[str.length-1] + reverse(str.slice(0,str.length-1))
 }
 
-
+console.log(reverse("")); // "esuoh"
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
 try {
   module.exports = reverse;
